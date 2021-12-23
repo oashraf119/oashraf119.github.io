@@ -1,0 +1,59 @@
+/* ----------- 1 ----------- */
+.title p {
+    font-size: 110px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0 #ff0000,
+                4px 4px 0 #00bbff,
+                6px 6px 0 #8646c5;
+}
+
+/* ----------- 2 ----------- */
+.one,
+.two,
+.three {
+    font-size: 40px;
+    text-align: center;
+}
+.one {
+    text-transform: uppercase;
+}
+.two {
+    text-transform: capitalize;
+}
+.three {
+    text-transform: lowercase;
+}
+
+/* ----------- 3 ----------- */
+.parent,
+.active {
+    width: 400px;
+    background-color: #eee;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px auto;
+}
+.active {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ----------- 4 ----------- */
+a {
+    display: inline-block;
+    position: relative; /* من اجل توسيط العنصر */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%); /* من اجل توسيط العنصر */
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    background-color: #009688;
+    padding: 30px 70px;
+    border-bottom: 20px solid #00514A;
+
+}

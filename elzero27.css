@@ -1,0 +1,40 @@
+:root {
+    --colorPrimary: #607D8B;
+    --colorSecondary: #000;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: var(--colorPrimary);
+    position: relative;
+    box-shadow: var(--colorSecondary) 0 -5px 0 inset;
+}
+div::before {
+    content: '';
+    position: absolute;
+    left: 14.5%;
+    top: -35.2%;
+    width: 70.5%;
+    height: 70.5%;
+    background-color: var(--colorSecondary);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    box-shadow: rgb(255 255 255) -5px -5px 0 inset;
+}
+div::after {
+    padding: 4%;
+    content: "Elzero";
+    color: white;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}

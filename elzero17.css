@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 50px auto;
+    gap: 20px;
+  }
+  .grid div {
+    background-color: #607d8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    counter-increment: elements;
+  }
+  .grid div::after {
+    content: counter(elements);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .grid div::before {
+    content: "Element";
+    color: #fff;
+    font-weight: bold;
+    padding: 0 5px;
+    font-size: 1.5em;
+  }

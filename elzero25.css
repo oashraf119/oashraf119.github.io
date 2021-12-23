@@ -1,0 +1,47 @@
+:root {
+    --colorPrimary: #009688;
+    --colorSecondary: #fff;
+}
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+h1 {
+    width: 150px;
+    background-color: var(--colorPrimary);
+    padding: 20px 0;
+    text-align: center;
+    color: var(--colorSecondary);
+    position: relative;
+}
+h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--colorPrimary);
+    z-index: -1;
+    transform: skewX(20deg) translate(-20px);
+    -webkit-transform: skewX(20deg) translate(-20px);
+    -moz-transform: skewX(20deg) translate(-20px);
+    -ms-transform: skewX(20deg) translate(-20px);
+    -o-transform: skewX(20deg) translate(-20px);
+}
+h1::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--colorPrimary);
+    z-index: -1;
+    transform: skewX(20deg) translate(-40px);
+    -webkit-transform: skewX(20deg) translate(-40px);
+    -moz-transform: skewX(20deg) translate(-40px);
+    -ms-transform: skewX(20deg) translate(-40px);
+    -o-transform: skewX(20deg) translate(-40px);
+}

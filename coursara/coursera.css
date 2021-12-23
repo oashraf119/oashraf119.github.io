@@ -15,7 +15,9 @@ p {
   overflow: hidden;
 }
 
-#container {
+#container,
+#container-1,
+#container-2 {
   position: relative;
 }
 

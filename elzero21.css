@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    align-content: space-between;
+  }
+  
+  .grid div {
+    background-color: #e82b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box; /* padding هذه الخاصية وفضعتها فقط من اجل */
+}
+
+/* ---------- 1 ---------- */
+div.parent {
+    background-color: #eee;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.full,
+.one-1,
+.two-2,
+.three-3 {
+    background-color: grey;
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 20px;
+}
+div.clear {
+    clear: both;
+}
+.full {
+    width: calc((100% - 30px) / 1);
+}
+.one-1 {
+    width: calc((100% - 60px) / 3);
+}
+.two-2 {
+    width: calc((100% - 45px) / 2);
+}
+.three-3 {
+    width: calc((100% - 75px) / 4);
+    margin-bottom: 15px;
+}
+
+/* ---------- 2 ---------- */
+.normal,
+.one,
+.two {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #B3B3B3;
+    color: black;
+}
+.one {
+    background-color: rgba(179, 179, 179, 0.1);
+}
+.two {
+    opacity: 0.1;
+}

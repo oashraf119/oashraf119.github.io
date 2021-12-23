@@ -1,0 +1,50 @@
+/* ----------- 1 ----------- */
+.shape-1,
+.shape-2,
+.shape-3 {
+    background-color: #D4D4D4;
+    display: inline-block;
+    padding: 50px;
+    margin: 20px;
+}
+.shape-1 {
+    border: 5px solid red;
+    outline: 5px solid black;
+}
+.shape-2 {
+    border-width: 5px;
+    border-color: blue green;
+    border-style: solid;
+    outline: 5px solid black;
+}
+.shape-3 {
+    border-width: 5px;
+    border-color: red green blue yellow;
+    border-style: dashed;
+    outline: 5px solid black;
+}
+
+/* ----------- 2 ----------- */
+div.one,
+div.two,
+div.three {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 400px;
+    background-color: #EEEEEE;
+    
+}
+.one .child {
+    border-left: 5px solid #e91e63;
+    padding: 15px;
+}
+.two {
+    border-left: 5px solid black;
+    visibility: hidden;
+    padding: 15px;
+}
+.three .child {
+    border-left: 5px solid #009688;
+    padding: 15px;
+}

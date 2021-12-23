@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 5px solid #2196f3;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    animation-name: spinner;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+div:hover,
+div:hover::after,
+div:hover::before {
+    animation-play-state: running;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+div::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #ffc107;
+    border-bottom-color: transparent;
+    animation: spinner 1.5s linear infinite;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation-play-state: paused;
+}
+div::before {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: -19px;
+    width: 78px;
+    height: 78px;
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #000;
+    border-bottom-color: transparent;
+    animation: spinner 2s linear infinite;
+    -webkit-animation: spinner 2s linear infinite;
+    animation-play-state: paused;
+}

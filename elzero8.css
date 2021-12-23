@@ -1,0 +1,26 @@
+/* ---------- 3 ---------- */
+.list {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px 20px 0;
+    border: 1px solid black;
+}
+.html,
+.css,
+.javascript {
+    background-color: #EEEEEE;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.html ol li,
+.css ol li,
+.javascript ul li {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.css ol li {
+    list-style-type: upper-roman;
+}

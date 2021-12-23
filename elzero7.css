@@ -1,0 +1,44 @@
+/* ---------- 2 ---------- */
+div {
+    background-color: #EEEEEE;
+    width: 400px;
+    margin: 40px auto;
+    font-size: 20px;
+    padding: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #F44336 #03A9F4;
+    position: relative;
+}
+div span {
+    display: block;
+    width: 30px;
+    background-color: #03A9F4;
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+.top-left,
+.bottom-left { /* 1+2 */
+    border-right: 2px solid #F44336;
+}
+.top-right,
+.bottom-right { /* 3+4 */
+    border-left: 2px solid #F44336;
+}
+.top-left { /* 1 */
+    top: -13px;
+    left: -17px;
+}
+.bottom-left { /* 2 */
+    bottom: -12px;
+    left: -17px;
+}
+.top-right { /* 3 */
+    top: -13px;
+    right: -17px;
+}
+.bottom-right { /* 4 */
+    bottom: -12px;
+    right: -17px;
+}

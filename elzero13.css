@@ -1,0 +1,22 @@
+div {
+    background-color: #EEEEEE !important;
+    color: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    font-size: 20px !important;
+    font-weight: bold;
+    width: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+div::after {
+    position: absolute;
+    content: "Elzero";
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}

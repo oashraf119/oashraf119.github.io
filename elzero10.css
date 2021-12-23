@@ -1,0 +1,98 @@
+/* ---------- 1 ---------- */
+div.test {
+    max-width: 300px;
+    min-height: 60px;
+    background-color: #EEEEEE;
+    font-size: 50px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+}
+div.test:empty {
+    background-color: red;
+}
+
+/* ---------- 2 ---------- */
+div.text {
+    background-color: #D4D4D4;
+    width: 700px;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    margin: 20px auto;
+    position: relative;
+}
+div.text span {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    margin-top: -37px;
+}
+
+/* ---------- 3 ---------- */
+p.user {
+    width: 650px;
+    padding: 20px;
+    background-color: #EFEFEF;
+    font-size: 25px;
+    border-left: 5px solid #E91E63;
+    margin: 20px auto;
+    position: relative;
+}
+p.user::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #E91E63 transparent transparent;
+    top: 50%;
+    left: -25px;
+    margin-top: -10px;
+}
+p.user::before {
+    content: attr(data-person);
+    position: absolute;
+    background-color: #CDD2D4;
+    padding: 10px;
+    width: 70px;
+    height: auto;
+    top: 0;
+    left: -120px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ---------- 4 ---------- */
+p.title {
+    width: 700px;
+    padding: 20px;
+    font-size: 25px;
+    background-color: #EFEFEF;
+    margin: 15px auto;
+    counter-increment: numbers-counters;
+    position: relative;
+}
+p.title::before {
+    content: counter(numbers-counters);
+    position: absolute;
+    background-color: #F4493C;
+    padding: 20px;
+    top: 0;
+    left: -50px;
+    color: white;
+}
+p.title::after {
+    content: "";
+    position: absolute;
+    background-color: #F4493C;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    right: -5px;
+}

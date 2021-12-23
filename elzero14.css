@@ -1,0 +1,18 @@
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+  }
+  div {
+      color: var(--mainColor, #ff0000);
+      border: 5px solid var(--mainColor, #000000);
+      padding: var(--mainPadding);
+      margin: 20px;
+      font-size: 30px;
+  }
+  div:nth-child(n+4) {
+      color: var(--mainColor000, #ff0000);
+      border: 5px solid var(--mainColor00, #000000);
+      padding: var(--mainPadding00, 10px);
+      margin: 20px;
+      font-size: 30px;
+  }

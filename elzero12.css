@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- 1 ---------- */
+.parent {
+    background-color: #F2F2F4;
+    padding: 20px;
+    width: 500px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    transition: margin-top .5s ease;
+    -webkit-transition: margin-top .5s ease;
+    -moz-transition: margin-top .5s ease;
+    -ms-transition: margin-top .5s ease;
+    -o-transition: margin-top .5s ease;
+    
+}
+.parent div {
+    background-color: #DEDEDC;
+    margin: 20px;
+    padding: 15px;
+    transition: margin-top .5s ease .5s;
+    -webkit-transition: margin-top .5s ease .5s;
+    -moz-transition: margin-top .5s ease .5s;
+    -ms-transition: margin-top .5s ease .5s;
+    -o-transition: margin-top .5s ease .5s;
+}
+.parent:hover {
+    margin-top: 40px;
+}
+.parent:hover .two {
+    margin-top: 50px;
+}
